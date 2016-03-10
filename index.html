@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <head>
+    <title></title>
+    <meta name="description" content="" />
+    <style>
+    
+    body{
+      background:#f7f7f7;
+    }
+      
+      #content{
+        width:30%;
+        margin: 70px auto 0 auto;
+        background:#fff;
+        border:solid 1px #a7a7a7;
+        padding:20px;
+      }
+      
+      label{
+        display:block;
+        margin:10px 0;
+      }
+      
+      input[type=text]{
+        width:250px;
+        height:25px;
+      }
+      
+      input[type=submit]{
+        display:block;
+        margin:15px 0;
+        border:solid 1px #222;
+        background:#222;
+        padding:5px;
+        color:#fff;
+      }
+
+    
+    </style>
+    
+    <script>
+    
+    if(document.createElement('input').webkitSpeech === undefined){
+      alert('Votre navigateur ne supporte pas Speech');
+    }
+    
+    </script>
+    
+    <!--
+    <script>
+    if (document.createElement('input').webkitSpeech === undefined) {
+      alert('Votre navigateur ne supporte pas Speech!');
+    }
+    </script>
+    -->
+  </head>
+  <body>
+    <div id="content">
+      
+      <form>
+        
+        <input type="text" name="champ" x-webkit-speech />
+        
+      </form>
+      
+      <!--<input type="text" x-webkit-speech />-->
+    </div>
+  </body>
+</html>
